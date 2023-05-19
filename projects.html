@@ -47,34 +47,21 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="main">
-        <div class="main__container">
+    <div class="product__main">
+        <div class="product__main__container">
             <!-- Text Content-->
             <div class="main__content">
-                <h1>THIS IS THE PROJECT PAGE</h1>
-                <h2>TECHNOLOGY</h2>
-                <p>See what makes us different.</p>
-                <button class="main__btn">
-                    <a href="/">Get Started</a>
-                </button>
-            </div>
-            <!-- Image -->
-            <div class="main__img--container">
-                <img src="images/pic4.jpg" alt="pic" id="main__img">
-            </div>
+                <h2 style="font-size: 3.5rem; padding-bottom:25px;">CURRENT PROJECTS</h2>
+                <p>Check out what I've been working on!</p>
+            </div>   
+            <img src="images/pic5.svg" alt="Project Image">         
         </div>
     </div>
     
     <!-- Slideshow Section -->
-    <div class="carousel__columns" style="align-items: center;
-    justify-self: center;
-        position: relative;
-        display: grid; 
-        grid-template-columns: 1fr 1fr; 
-        margin: 30px auto;
-        padding: 0 50px; height: 800px;"
-        >
+    <div class="carousel__columns">
     <div class="carousel">
+        <h1>Wordpress</h1>
         <div class="carousel__content" id="carousel1">
             <div class="carousel__content--continuous">
                 <div class="carousel__content--item active">
@@ -91,14 +78,15 @@
         </div>
         <div class="carousel__nav">
             <div class="carousel__left">
-                <button class="carousel__left--btn" onclick="carouselNextNew(1, true);">&lt;</button>
+                <button class="carousel__left--btn" onclick="carouselNextNew(1, true);"><i class="fas fa-arrow-left"></i></button>
             </div>
             <div class="carousel__right">
-                <button class="carousel__right--btn" onclick="carouselNextNew(1, false);">&gt;</button>
+                <button class="carousel__right--btn" onclick="carouselNextNew(1, false);"><i class="fas fa-arrow-right"></i></button>
             </div>
         </div>
     </div>
     <div class="carousel">
+        <h1>HTML, CSS, & JavaScript</h1>
         <div class="carousel__content" id="carousel2">
             <div class="carousel__content--continuous">
                 <div class="carousel__content--item active">
@@ -115,86 +103,56 @@
         </div>
         <div class="carousel__nav">
             <div class="carousel__left">
-                <button class="carousel__left--btn" onclick="carouselNextNew(2, true);">&lt;</button>
+                <button class="carousel__left--btn" onclick="carouselNextNew(2, true);"><i class="fas fa-arrow-left"></i></button>
             </div>
             <div class="carousel__right">
-                <button class="carousel__right--btn" onclick="carouselNextNew(2, false);">&gt;</button>
+                <button class="carousel__right--btn" onclick="carouselNextNew(2, false);"><i class="fas fa-arrow-right"></i></button>
             </div>
         </div>
     </div>
     </div>
 
+   <!-- Footer Section -->
+   <div class="footer__container">
 
-
-
-    <!-- Footer Section -->
-    <div class="footer__container">
-
-        <!-- Footer Links (Top of Footer) -->
-        <div class="footer__links">
-            <div class="footer__link--wrapper">
-                <div class="footer__link--items">
-                    <h2>About Us</h2>
-                    <a href="/">How it works</a>
-                    <a href="/">Testimonials</a>
-                    <a href="/">Careers</a>
-                    <a href="/">Investments</a>
-                    <a href="/">Term of Service</a>
-                </div>
-                <div class="footer__link--items">
-                    <h2>Contact Us</h2>
-                    <a href="/">Contact</a>
-                    <a href="/">Support</a>
-                    <a href="/">Destinations</a>
-                    <a href="/">Sponsorships</a>
-                </div>
-            </div>
-            <div class="footer__link--wrapper">
-                <div class="footer__link--items">
-                    <h2>Videos</h2>
-                    <a href="/">Submit Video</a>
-                    <a href="/">Ambassadors</a>
-                    <a href="/">Agency</a>
-                    <a href="/">Influencer</a>
-                </div>
-                <div class="footer__link--items">
-                    <h2>Social Media</h2>
-                    <a href="/">Instagram</a>
-                    <a href="/">Youtube</a>
-                </div>
+    <!-- Footer Links (Top of Footer) -->
+    <div class="footer__links">
+        <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+                <h2>About Me</h2>
+                <a href="/">How it works</a>
+                <a href="/">Testimonials</a>
             </div>
         </div>
-
-        <!-- Bottom of Footer Section-->
-        <div class="social__media">
-            <div class="social__media--wrap">
-                <!-- Gem icon -->
-                <div class="footer__logo">
-                    <a href="/" id="footer__logo"><i class="fas fa-gem"></i>NEXT</a>
-                </div>
-                <!-- Rights -->
-                <p class="website__rights">© NEXT 2023. All rights reserved</p>
-                <!-- Social Icons -->
-                <div class="social__icons">
-                    <a href="/" class="social__icon--link" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="/" class="social__icon--link" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="/" class="social__icon--link" target="_blank">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="/" class="social__icon--link" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="/" class="social__icon--link" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
+        <div class="footer__link--wrapper">
+           <div class="footer__link--items">
+                <h2>Contact Me</h2>
+                <p>fingerhutrachel@gmail.com</p>
             </div>
         </div>
     </div>
+
+    <!-- Bottom of Footer Section-->
+    <div class="social__media">
+        <div class="social__media--wrap">
+            <!-- Gem icon -->
+            <div class="footer__logo">
+                <a href="/" id="footer__logo"><i class="fas fa-mouse"></i>Rachel Fingerhut</a>
+            </div>
+            <!-- Rights -->
+            <p class="website__rights">© Rachel Fingerhut 2023 All rights reserved</p>
+            <!-- Social Icons -->
+            <div class="social__icons">
+                <a href="https://github.com/rfingerhut93" class="social__icon--link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rachel-fingerhut/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
     <script src="app.js"></script>
 
 </body>

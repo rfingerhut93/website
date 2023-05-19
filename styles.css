@@ -442,12 +442,48 @@
     transition: 0.2s ease-in;
     cursor: pointer;
 }
+/** PRODUCT PAGE CONTENT **/
+.product__main{
+    background-color:#141414;
+    margin: 0;
+}
 
+.product__main__container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 50vh;
+    background-color: #141414;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.product__main__container img{
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
 /** Slide Show Section on Product **/
+.carousel__columns{
+    align-items: center;
+    justify-self: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    margin: 30x auto;
+    padding: 0 50px; 
+    height: 800px;
+}
 .carousel {
     position: relative;
-    display: flex;
+    display: grid;
     align-items: center;
     justify-self: center;
     height: auto;
@@ -455,11 +491,34 @@
     margin: 0;
 }
 
+.carousel h1{
+    justify-self: center;
+    background-color: rgb(255, 129, 119);
+    background-image: linear-gradient(
+        to right, 
+        #ff8177 0%, 
+        #ff867a 0%, 
+        #ff8c7f 21%, 
+        #f99185 52%, 
+        #cf556c 78%, 
+        #b12a5b 100%
+    );
+    background-size: 100%;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+
+}
+
 .carousel__nav {
-    position: absolute;
-    height: auto;
+    position:relative;
+    height: 90px;
+    background-color: rgba(112, 110, 110, 0.055);
     width: 100%;
-    top: 0%;
+    bottom: 0%;
     align-content: center;
     justify-content: center;
 }
@@ -470,7 +529,6 @@
     min-width: 100px;
     height:auto;
     display: flex;
-    padding-top: 25%;
 }
 
 .carousel__left {
@@ -484,12 +542,13 @@
 .carousel__left--btn, .carousel__right--btn {
     width: 90px;
     height: 90px;
-    border: 1px solid rgba(220, 220, 220, 75%);
-    border-radius: 45px;
+    border: none;
     margin: auto;
+    background: transparent;
+}
+.carousel__left--btn, .carousel__right--btn i{
     font-size: 36px;
-    font-weight: bold;
-    background-color: rgba(220, 220, 220, 25%)
+    color: rgba(204, 204, 204, 0.75);
 }
 
 .carousel__content {
