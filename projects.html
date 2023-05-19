@@ -14,7 +14,7 @@
     <nav class="navbar">
         <div class="navbar__container">
             <!-- adds icon to navbar logo -->
-            <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>NEXT</a>
+            <a href="/" id="navbar__logo"><i class="fas fa-mouse"></i>Rachel Fingerhut</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -28,18 +28,18 @@
                     </a>
                 </li>
                 <li class="navbar__item">
-                    <a href="tech.html" class="navbar__links">
-                        Tech
+                    <a href="projects.html" class="navbar__links">
+                        Projects
                     </a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">
-                        Products
+                    <a href="skills.html" class="navbar__links">
+                        Skills
                     </a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="/" class="button">
-                        Sign Up
+                    <a href="contact.html" class="button">
+                        Contact
                     </a>
                 </li>
             </ul>
@@ -51,7 +51,7 @@
         <div class="main__container">
             <!-- Text Content-->
             <div class="main__content">
-                <h1>THIS IS THE TECH PAGE</h1>
+                <h1>THIS IS THE PROJECT PAGE</h1>
                 <h2>TECHNOLOGY</h2>
                 <p>See what makes us different.</p>
                 <button class="main__btn">
@@ -65,22 +65,67 @@
         </div>
     </div>
     
-    <!-- Services Section -->
-    <div class="services">
-        <h1>See what the hype is about</h1>
-        <div class="services__container">
-            <div class="services__card">
-                <h2>Experience Bliss</h2>
-                <p>AI Powered Technology</p>
-                <button>Get Started</button>
+    <!-- Slideshow Section -->
+    <div class="carousel__columns" style="align-items: center;
+    justify-self: center;
+        position: relative;
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        margin: 30px auto;
+        padding: 0 50px; height: 800px;"
+        >
+    <div class="carousel">
+        <div class="carousel__content" id="carousel1">
+            <div class="carousel__content--continuous">
+                <div class="carousel__content--item active">
+                    <div class="image__container">
+                        <img src="images/lovinspsychotherapy.png" alt="Lovins Psychotherapy Website">
+                    </div>
+                </div>
+                <div class="carousel__content--item">
+                    <div class="image__container">
+                        <img src="images/vogueautowerks.png" alt="Vogue Autowerks Website">
+                    </div>
+                </div>
             </div>
-            <div class="services__card">
-                <h2>Are you ready?</h2>
-                <p>Take the leap</p>
-                <button>Get Started</button>
+        </div>
+        <div class="carousel__nav">
+            <div class="carousel__left">
+                <button class="carousel__left--btn" onclick="carouselNextNew(1, true);">&lt;</button>
+            </div>
+            <div class="carousel__right">
+                <button class="carousel__right--btn" onclick="carouselNextNew(1, false);">&gt;</button>
             </div>
         </div>
     </div>
+    <div class="carousel">
+        <div class="carousel__content" id="carousel2">
+            <div class="carousel__content--continuous">
+                <div class="carousel__content--item active">
+                    <div class="image__container">
+                        <img src="images/ecorewardswebsite.png" alt="Eco Rewards Website">
+                    </div>
+                </div>
+                <div class="carousel__content--item">
+                    <div class="image__container">
+                        <img src="images/rachelfingerhutwebsite.png" alt="Rachel Fingerhut Website">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel__nav">
+            <div class="carousel__left">
+                <button class="carousel__left--btn" onclick="carouselNextNew(2, true);">&lt;</button>
+            </div>
+            <div class="carousel__right">
+                <button class="carousel__right--btn" onclick="carouselNextNew(2, false);">&gt;</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
 
     <!-- Footer Section -->
     <div class="footer__container">
@@ -150,7 +195,7 @@
             </div>
         </div>
     </div>
-
     <script src="app.js"></script>
+
 </body>
 </html>

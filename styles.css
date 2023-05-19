@@ -359,7 +359,7 @@
 }
 
 .services h1 {
-    background-color: #ff8177;
+    background-color: rgb(255, 129, 119);
     background-image: linear-gradient(
         to right, 
         #ff8177 0%, 
@@ -442,6 +442,82 @@
     transition: 0.2s ease-in;
     cursor: pointer;
 }
+
+
+/** Slide Show Section on Product **/
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    height: auto;
+    width: 80%;
+    margin: 0;
+}
+
+.carousel__nav {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    top: 0%;
+    align-content: center;
+    justify-content: center;
+}
+
+.carousel__left, .carousel__right {
+    position: absolute;
+    width: 100px;
+    min-width: 100px;
+    height:auto;
+    display: flex;
+    padding-top: 25%;
+}
+
+.carousel__left {
+    left: 0;
+}
+
+.carousel__right {
+    right: 0;
+}
+
+.carousel__left--btn, .carousel__right--btn {
+    width: 90px;
+    height: 90px;
+    border: 1px solid rgba(220, 220, 220, 75%);
+    border-radius: 45px;
+    margin: auto;
+    font-size: 36px;
+    font-weight: bold;
+    background-color: rgba(220, 220, 220, 25%)
+}
+
+.carousel__content {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.carousel__content--continuous{
+    height: 100%;
+    display:flex;
+    transition: transform 1.5s; 
+    transform: translateX(0%); 
+}
+.carousel__content--item {
+    height: 100%;
+    width: 100%;
+    min-width:100%;
+}
+
+.carousel__content--item .image__container img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
 
 /* Mobile Responsive */
 @media screen and (max-width: 960px) {
